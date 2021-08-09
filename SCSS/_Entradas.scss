@@ -1,0 +1,157 @@
+/*Entradas*/
+
+
+
+#comprarTicket {
+    padding: 50px 0;
+    border: none;
+        h1{
+            margin: ($Margin)-1;
+            text-align: center;
+            font-size: ($Letra/2)+0.8;
+            font-weight: bold;
+            color: $colorTitulo ;  
+        }
+}
+
+#contenedorCards {
+    margin: $Margin/2;
+}
+
+#contenedorText {
+    h5 {
+        text-align: start;
+        margin-bottom: $Margin/4;
+    }
+}
+
+#contenedorText {
+    p {
+        text-align: start;
+        margin-bottom: $Margin/4;
+    }
+}
+
+.card-footer {
+    h3 {
+        margin-bottom: $Margin/2;
+    }
+}
+
+.card-footer {
+    a {
+        font-size: ($Letra/2)-0.5;
+        font-weight: bold;
+        border-radius: .5rem;
+        transition: all 1s ease;
+            &:hover{
+                transform: scale(0.99);
+        }
+    }
+}
+
+#imagenArtista {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+        img {
+            height: $Ancho/12;
+            width: 20%;
+            margin: $Margin/4;
+            border-radius: 50%;
+
+        }        
+}
+
+#imagenArtista {
+        p {
+            height: $Ancho/12;
+            margin-top: $Margin/4;  
+            color: $colorFondoEstrellas;  
+    
+        }        
+}
+
+#contenedorCards {
+        img {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+    
+}
+
+#boxInterior {
+    p {
+        color: $colorTitulo;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/*
+.comprarTicket {
+    h1 {
+        margin: ($Margin)-1;
+        text-align: center;
+        font-size: ($Letra/2)+0.8;
+        font-weight: bold;
+        color: $colorTitulo ;  
+    }
+}
+
+.comprarTicket {
+    height: ($Ancho/2);
+    margin-top: ($Margin)-1;
+    margin-block-end: $Margin;
+    margin-left: ($Margin*2)+2;
+            @media only screen and (max-width: 1024px) {
+                    display: block;
+                    height: $Ancho;                   
+            }
+}
+
+.comprarTiket__sub {
+    margin: $Margin+1 $Margin+3;
+    display: inline-block;
+            h3 {
+                margin: $Margin/2 $Margin/$Margin; 
+                font-size: ($Letra/2); 
+                font-weight: bold; 
+                color: $colorTitulo;  
+            }
+    
+}
+
+.comprarTiket__sub {
+            a {
+                font-size: ($Letra/2)-0.5;
+                font-weight: bold;
+                padding: .5rem 5rem;
+                border-radius: .5rem;  
+            }   
+}
+
+.comprarTiket__sub {
+            select {
+                padding: .5rem 7rem;
+                border-radius: .5rem;
+                font-size: ($Letra/2)-0.5;  
+            }
+}
+
+.comprarTiket__sub {
+            option {
+                font-size: ($Letra/2)-0.5;
+            }
+}
+
+.comprarTiket__sub {
+            input {
+                padding: .5rem 7rem;
+                border-radius: .5rem;
+                font-size: ($Letra/2)-0.5;
+            }
+}
+
+*/

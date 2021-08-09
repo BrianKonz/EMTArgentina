@@ -1,0 +1,40 @@
+$colorTexto: #0d6efd;
+$colorFondoEstrellas: grey;
+$ColorEstrellas: orange;
+$colorTitulo: #BF1363;
+$Ancho: 50rem;
+$Largo: 50rem;
+$Letra: 4rem;
+$Margin: 4rem;
+
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+@import "index";
+
+@import "navBar";
+
+@import "proxEv";
+
+@import "top10Artist";
+
+@import "Entradas";
+
+@import "Contacto";
+
+@import "Footer";
+

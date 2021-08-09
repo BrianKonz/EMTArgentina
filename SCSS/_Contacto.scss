@@ -1,0 +1,137 @@
+/*Form Contacto*/
+
+
+
+main{
+    .contacto {
+        padding: 50px 0;
+            h1{
+                margin: ($Margin)-1;
+                text-align: center;
+                font-size: ($Letra/2)+0.8;
+                font-weight: bold;
+                color: $colorTitulo ;  
+            }
+        }
+} 
+
+main {
+    .contacto{
+        .contenedor{
+            .Formiul{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            
+        }
+    }
+}
+
+
+.Formiul{
+        .Nombre{
+            background: none;
+            border: none;
+            outline: none;
+            border-bottom: .1rem solid $colorTexto;
+            padding: 15px 20px;
+            font-size: 1.5rem;
+            color: $colorTitulo;
+            width: 46%;
+            margin-bottom: 2rem;
+            transition: all .5s ease;
+                &:focus{
+                    border-bottom: 1px solid $colorTitulo;
+                }
+        }
+    
+}
+
+.Formiul{
+    .Mail{
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: .1rem solid $colorTexto;
+        padding: 15px 20px;
+        font-size: 1.5rem;
+        color: $colorTitulo;
+        width: 46%;
+        margin-bottom: 2rem;
+        transition: all .5s ease;
+                &:focus{
+                    border-bottom: 1px solid $colorTitulo;
+                }
+    }
+
+}
+
+.Formiul{
+    .Tel{
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: .1rem solid $colorTexto;
+        padding: 15px 20px;
+        font-size: 1.5rem;
+        color: $colorTitulo;
+        width: 46%;
+        margin-bottom: 2rem;
+        transition: all .5s ease;
+                &:focus{
+                    border-bottom: 1px solid $colorTitulo;
+                }
+    }
+
+}
+
+.Formiul{
+    .Sexo {
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: .1rem solid $colorTexto;
+        padding: 15px 20px;
+        font-size: 1.5rem;
+        color: grey;
+        width: 46%;
+        margin-bottom: 2rem;
+        transition: all .5s ease;
+                &:focus{
+                    border-bottom: 1px solid $colorTitulo;
+                }
+    }
+
+}
+
+.mensaje{
+      background: none;
+            border: none;
+            outline: none;
+            border-bottom: .1rem solid $colorTexto;
+            padding: 15px 20px;
+            font-size: 1.5rem;
+            color: $colorTitulo;
+            width: 96%;
+            margin-bottom: 2rem;
+            transition: all .5s ease;
+                &:focus{
+                    border-bottom: 1px solid $colorTitulo;
+                }
+            
+}
+
+form{
+    .btnForm{
+        padding: .5rem 7rem;
+        margin-top: $Margin;
+        font-weight: bold;
+        border-radius: .5rem;
+        font-size: ($Letra/2)-0.5;
+    }
+}
+
+
+
+

@@ -1,0 +1,40 @@
+/*tabla*/
+
+.table-responsive {
+    padding: 20px 0;
+    border: none;
+        h1{
+            margin: ($Margin)-1;
+            text-align: center;
+            font-size: ($Letra/2)+0.8;
+            font-weight: bold;
+            color: $colorTitulo ;  
+        }
+}
+
+.tabla_Eventos {
+    th {
+        color: $colorTexto;
+        font-size: $Letra/2;
+        font-weight: bold;
+    }
+}
+
+.tabla_Eventos {
+    td {
+        color: $colorTitulo;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.tabla_Eventos {
+    td {
+        a {
+            color: $colorTexto;
+            font-size: ($Letra/2)-0.5;
+            text-decoration: none;
+        }
+    }
+}

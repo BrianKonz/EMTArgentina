@@ -1,0 +1,169 @@
+.emtLogo {
+    width: $Largo/2;
+    height: $Ancho/5;
+    margin-top: $Margin;
+}
+
+#miCuenta {
+    font-size: ($Letra/2)-0.5;
+    font-weight: bold;
+    position: absolute; /**me dejo poner el botón arriba**/
+    right: 4rem;
+    top: 4rem;
+    padding: .5rem 3rem;
+    border-radius: .5rem;
+
+        @media only screen and (max-width: 430px) {
+            position: absolute;
+            left: 2rem;
+            top: 17rem;
+        }    
+}
+
+
+#carouselWithControls {
+    margin-top: $Margin/2;
+    margin-block-end: $Margin/2;
+}
+
+#iconoIndex {
+    align-self: center;
+}
+
+.card-title {
+    color: $colorTexto;
+}
+
+.card-body {
+    text-align: center;
+    color: $colorTexto;
+}
+
+
+.formPuntaje {
+    text-align: center;
+        label {
+            font-size: $Letra+1;
+            color: $colorFondoEstrellas;
+        }
+}
+
+.formPuntaje{
+    label:hover{
+        color: $ColorEstrellas;
+    }
+}
+
+.formPuntaje {
+    label:hover ~ label {
+        color: $ColorEstrellas;
+    }
+} 
+
+input[type="radio"] {
+    display: none; 
+}
+
+input[type="radio"]:checked ~ label {
+    color: $ColorEstrellas;
+}
+
+.form__puntajeClasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+
+
+.h2Estrellas {
+    font-size: ($Letra)-1;
+    text-align: center;
+    font-weight: bold;
+    color: $colorTitulo;
+    margin-top: $Margin;
+}
+
+body { 
+    .modal {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+            p {
+                color: $colorTexto;
+                text-align: start;
+                margin: $Margin/2;
+                font-size: 1.5rem;
+            }
+    }
+}
+
+#btn-Modal:checked ~ .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    .contenedorModal {
+        width: 40rem;
+        height: 30rem;
+        margin: auto;
+        border-radius: 1rem;
+        background-color: #fff;
+        box-shadow: 1px 7px 25px rgba (0,0,0,0.6);
+        transition: all 500ms ease;
+            header {
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 10px;
+                background-color: $colorTexto;
+                color: #fff;
+                border-top: 1rem;
+            }
+    }
+}
+
+.contenedorModal {
+    label{
+        position: absolute;
+        top: 27.5%;
+        right: 36%;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        @media only screen and (max-width: 1300px) {
+            position: relative;
+            top: -11%;
+            right: -44%;
+        }
+    }
+}
+
+
+
+#btn-Modal {
+    display: none;
+}
+
+.botonpuntaje{
+    margin: $Margin;
+    text-align: center;
+        .lbl-Modal {
+            background-color: $colorTexto;
+            color: white;
+            font-size: ($Letra/2)-0.5;
+            font-weight: bold;
+            padding: .5rem 3rem;
+            border-radius: .5rem;
+            cursor: pointer;
+        }    
+}

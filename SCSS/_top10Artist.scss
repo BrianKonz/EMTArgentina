@@ -1,0 +1,45 @@
+/**Artistas**/
+
+#contenedorArtistas {
+    padding: 50px 0;
+    border: none;
+        h1{
+            margin: ($Margin)-1;
+            text-align: center;
+            font-size: ($Letra/2)+0.8;
+            font-weight: bold;
+            color: $colorTitulo ;  
+        }
+}
+
+#imgArtistas {
+    border-radius: 5% 50%;
+    margin-top: 20%;
+            @media only screen and (max-width: 1024px) {
+                    margin-top: 4%;
+            } 
+}
+
+
+.titleArtist {
+    font-size: ($Letra)-1;
+}
+
+.textArt {
+    font-size: $Letra/2;
+    color: $colorTitulo;
+}
+
+.frameArt {
+    width: 90%;
+    border-radius: 1%;
+}
+
+#cardBorder {
+    border-color: $colorTitulo;
+    transition: 1s;
+            &:hover{
+                transform:scale(0.99);
+            }
+}
+

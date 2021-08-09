@@ -1,0 +1,22 @@
+.navbar {
+    margin-top: 2rem;
+        @media only screen and (max-width: 430px) {
+            margin-top: $Margin*2;  
+            }
+}
+
+.nav-item {
+    a {
+        font-size: ($Letra/2);
+        margin-left: ($Margin)-1;
+            &:hover {
+               text-shadow: 0 0 5px rgb(255, 0, 255),
+                0 0 10px rgb(255, 0, 255),
+                0 0 20px rgb(255, 0, 255),
+                0 0 40px rgb(127, 38, 100),
+                0 0 80px rgb(127, 38, 100),
+                0 0 90px rgb(127, 38, 100),
+                0 0 100px rgb(127, 38, 100);
+            }       
+    }  
+}

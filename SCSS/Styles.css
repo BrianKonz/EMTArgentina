@@ -1,0 +1,565 @@
+@charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.emtLogo {
+  width: 25rem;
+  height: 10rem;
+  margin-top: 4rem;
+}
+
+#miCuenta {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  /**me dejo poner el botón arriba**/
+  right: 4rem;
+  top: 4rem;
+  padding: .5rem 3rem;
+  border-radius: .5rem;
+}
+
+@media only screen and (max-width: 430px) {
+  #miCuenta {
+    position: absolute;
+    left: 2rem;
+    top: 17rem;
+  }
+}
+
+#carouselWithControls {
+  margin-top: 2rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+#iconoIndex {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card-title {
+  color: #0d6efd;
+}
+
+.card-body {
+  text-align: center;
+  color: #0d6efd;
+}
+
+.formPuntaje {
+  text-align: center;
+}
+
+.formPuntaje label {
+  font-size: 5rem;
+  color: grey;
+}
+
+.formPuntaje label:hover {
+  color: orange;
+}
+
+.formPuntaje label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+.form__puntajeClasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.h2Estrellas {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #BF1363;
+  margin-top: 4rem;
+}
+
+body .modal {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body .modal p {
+  color: #0d6efd;
+  text-align: start;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+#btn-Modal:checked ~ .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .contenedorModal {
+  width: 40rem;
+  height: 30rem;
+  margin: auto;
+  border-radius: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 7px 25px rgba 0, 0, 0, 0.6;
+          box-shadow: 1px 7px 25px rgba 0, 0, 0, 0.6;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.modal .contenedorModal header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #0d6efd;
+  color: #fff;
+  border-top: 1rem;
+}
+
+.contenedorModal label {
+  position: absolute;
+  top: 27.5%;
+  right: 36%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .contenedorModal label {
+    position: relative;
+    top: -11%;
+    right: -44%;
+  }
+}
+
+#btn-Modal {
+  display: none;
+}
+
+.botonpuntaje {
+  margin: 4rem;
+  text-align: center;
+}
+
+.botonpuntaje .lbl-Modal {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .5rem 3rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.navbar {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 430px) {
+  .navbar {
+    margin-top: 8rem;
+  }
+}
+
+.nav-item a {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.nav-item a:hover {
+  text-shadow: 0 0 5px magenta, 0 0 10px magenta, 0 0 20px magenta, 0 0 40px #7f2664, 0 0 80px #7f2664, 0 0 90px #7f2664, 0 0 100px #7f2664;
+}
+
+/*tabla*/
+.table-responsive {
+  padding: 20px 0;
+  border: none;
+}
+
+.table-responsive h1 {
+  margin: 3rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #BF1363;
+}
+
+.tabla_Eventos th {
+  color: #0d6efd;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tabla_Eventos td {
+  color: #BF1363;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tabla_Eventos td a {
+  color: #0d6efd;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/**Artistas**/
+#contenedorArtistas {
+  padding: 50px 0;
+  border: none;
+}
+
+#contenedorArtistas h1 {
+  margin: 3rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #BF1363;
+}
+
+#imgArtistas {
+  border-radius: 5% 50%;
+  margin-top: 20%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #imgArtistas {
+    margin-top: 4%;
+  }
+}
+
+.titleArtist {
+  font-size: 3rem;
+}
+
+.textArt {
+  font-size: 2rem;
+  color: #BF1363;
+}
+
+.frameArt {
+  width: 90%;
+  border-radius: 1%;
+}
+
+#cardBorder {
+  border-color: #BF1363;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#cardBorder:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+/*Entradas*/
+#comprarTicket {
+  padding: 50px 0;
+  border: none;
+}
+
+#comprarTicket h1 {
+  margin: 3rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #BF1363;
+}
+
+#contenedorCards {
+  margin: 2rem;
+}
+
+#contenedorText h5 {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+#contenedorText p {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.card-footer h3 {
+  margin-bottom: 2rem;
+}
+
+.card-footer a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: .5rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card-footer a:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+#imagenArtista {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#imagenArtista img {
+  height: 4.16667rem;
+  width: 20%;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+#imagenArtista p {
+  height: 4.16667rem;
+  margin-top: 1rem;
+  color: grey;
+}
+
+#contenedorCards img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#boxInterior p {
+  color: #BF1363;
+  font-size: 1.5rem;
+}
+
+/*
+.comprarTicket {
+    h1 {
+        margin: ($Margin)-1;
+        text-align: center;
+        font-size: ($Letra/2)+0.8;
+        font-weight: bold;
+        color: $colorTitulo ;  
+    }
+}
+
+.comprarTicket {
+    height: ($Ancho/2);
+    margin-top: ($Margin)-1;
+    margin-block-end: $Margin;
+    margin-left: ($Margin*2)+2;
+            @media only screen and (max-width: 1024px) {
+                    display: block;
+                    height: $Ancho;                   
+            }
+}
+
+.comprarTiket__sub {
+    margin: $Margin+1 $Margin+3;
+    display: inline-block;
+            h3 {
+                margin: $Margin/2 $Margin/$Margin; 
+                font-size: ($Letra/2); 
+                font-weight: bold; 
+                color: $colorTitulo;  
+            }
+    
+}
+
+.comprarTiket__sub {
+            a {
+                font-size: ($Letra/2)-0.5;
+                font-weight: bold;
+                padding: .5rem 5rem;
+                border-radius: .5rem;  
+            }   
+}
+
+.comprarTiket__sub {
+            select {
+                padding: .5rem 7rem;
+                border-radius: .5rem;
+                font-size: ($Letra/2)-0.5;  
+            }
+}
+
+.comprarTiket__sub {
+            option {
+                font-size: ($Letra/2)-0.5;
+            }
+}
+
+.comprarTiket__sub {
+            input {
+                padding: .5rem 7rem;
+                border-radius: .5rem;
+                font-size: ($Letra/2)-0.5;
+            }
+}
+
+*/
+/*Form Contacto*/
+main .contacto {
+  padding: 50px 0;
+}
+
+main .contacto h1 {
+  margin: 3rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #BF1363;
+}
+
+main .contacto .contenedor .Formiul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Formiul .Nombre {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #0d6efd;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  color: #BF1363;
+  width: 46%;
+  margin-bottom: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.Formiul .Nombre:focus {
+  border-bottom: 1px solid #BF1363;
+}
+
+.Formiul .Mail {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #0d6efd;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  color: #BF1363;
+  width: 46%;
+  margin-bottom: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.Formiul .Mail:focus {
+  border-bottom: 1px solid #BF1363;
+}
+
+.Formiul .Tel {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #0d6efd;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  color: #BF1363;
+  width: 46%;
+  margin-bottom: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.Formiul .Tel:focus {
+  border-bottom: 1px solid #BF1363;
+}
+
+.Formiul .Sexo {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #0d6efd;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  color: grey;
+  width: 46%;
+  margin-bottom: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.Formiul .Sexo:focus {
+  border-bottom: 1px solid #BF1363;
+}
+
+.mensaje {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #0d6efd;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  color: #BF1363;
+  width: 96%;
+  margin-bottom: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.mensaje:focus {
+  border-bottom: 1px solid #BF1363;
+}
+
+form .btnForm {
+  padding: .5rem 7rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+}
+
+/**footer**/
+#footer {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=Styles.css.map */
