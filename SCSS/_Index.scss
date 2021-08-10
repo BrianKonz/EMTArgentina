@@ -26,6 +26,88 @@
     margin-block-end: $Margin/2;
 }
 
+.ConteinerCards {
+    background-image: url(/Galeria/FondoCards.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+        .Cards {
+            border-radius: 1rem;
+            box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            margin: 5rem;
+            overflow: hidden;
+            width: 40rem;
+            backdrop-filter: blur(1rem);
+            background-color: rgba(255, 255, 255, 0.060);
+            border: .1rem solid rgba(255,255,255, 0.18);
+            color: white;  
+                       
+        }
+}
+
+
+.Cards {
+        h2{
+                letter-spacing: .1rem;
+                margin: 2rem 0;
+            }
+    }
+
+.top-row {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+        p {
+            font-size: 2rem;
+        }
+}
+
+.content {
+    button {
+            background-color: #0d6dfd4b;
+            color: white;
+            font-size: ($Letra/2)-0.5;
+            font-weight: bold;
+            padding: .5rem 3rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            align-self: center;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .ConteinerCards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
+    
+
+
+
+/*
 #iconoIndex {
     align-self: center;
 }
@@ -38,7 +120,7 @@
     text-align: center;
     color: $colorTexto;
 }
-
+*/
 
 .formPuntaje {
     text-align: center;
