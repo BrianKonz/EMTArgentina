@@ -46,6 +46,7 @@
             margin: 5rem;
             overflow: hidden;
             width: 40rem;
+            height: 40rem;
             backdrop-filter: blur(1rem);
             background-color: rgba(255, 255, 255, 0.060);
             border: .1rem solid rgba(255,255,255, 0.18);
@@ -78,22 +79,10 @@
     align-items: flex-start;
     justify-content: space-between;
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 }
 
-.content {
-    button {
-            background-color: #0d6dfd4b;
-            color: white;
-            font-size: ($Letra/2)-0.5;
-            font-weight: bold;
-            padding: .5rem 3rem;
-            border-radius: .5rem;
-            cursor: pointer;
-            align-self: center;
-    }
-}
 
 @media only screen and (max-width: 1030px) {
     .ConteinerCards{
@@ -105,22 +94,6 @@
 }
     
 
-
-
-/*
-#iconoIndex {
-    align-self: center;
-}
-
-.card-title {
-    color: $colorTexto;
-}
-
-.card-body {
-    text-align: center;
-    color: $colorTexto;
-}
-*/
 
 .formPuntaje {
     text-align: center;

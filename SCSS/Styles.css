@@ -84,6 +84,7 @@ body {
   margin: 5rem;
   overflow: hidden;
   width: 40rem;
+  height: 40rem;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   background-color: rgba(255, 255, 255, 0.06);
@@ -132,20 +133,7 @@ body {
 }
 
 .content p {
-  font-size: 2rem;
-}
-
-.content button {
-  background-color: #0d6dfd4b;
-  color: white;
   font-size: 1.5rem;
-  font-weight: bold;
-  padding: .5rem 3rem;
-  border-radius: .5rem;
-  cursor: pointer;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 @media only screen and (max-width: 1030px) {
@@ -164,20 +152,6 @@ body {
   }
 }
 
-/*
-#iconoIndex {
-    align-self: center;
-}
-
-.card-title {
-    color: $colorTexto;
-}
-
-.card-body {
-    text-align: center;
-    color: $colorTexto;
-}
-*/
 .formPuntaje {
   text-align: center;
 }
