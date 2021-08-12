@@ -33,6 +33,12 @@
     }
 }
 
+#contenedorText {
+    #textoEncabezado {
+        color: $colorTexto;
+    }
+}
+
 .card-footer {
     h3 {
         margin-bottom: $Margin/2;

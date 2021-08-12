@@ -413,6 +413,10 @@ body .modal p {
   margin-bottom: 1rem;
 }
 
+#contenedorText #textoEncabezado {
+  color: #0d6efd;
+}
+
 .card-footer h3 {
   margin-bottom: 2rem;
 }
