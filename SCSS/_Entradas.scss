@@ -22,6 +22,7 @@
     h5 {
         text-align: start;
         margin-bottom: $Margin/4;
+        color: $colorTexto;
     }
 }
 
@@ -29,6 +30,12 @@
     p {
         text-align: start;
         margin-bottom: $Margin/4;
+    }
+}
+
+#contenedorText {
+    #textoEncabezado {
+        color: $colorTexto;
     }
 }
 
