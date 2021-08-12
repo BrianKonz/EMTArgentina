@@ -405,11 +405,13 @@ body .modal p {
 #contenedorText h5 {
   text-align: start;
   margin-bottom: 1rem;
+  color: #0d6efd;
 }
 
 #contenedorText p {
   text-align: start;
   margin-bottom: 1rem;
+  color: #0d6efd;
 }
 
 .card-footer h3 {
