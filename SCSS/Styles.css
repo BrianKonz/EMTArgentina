@@ -335,8 +335,8 @@ body .modal p {
 }
 
 @media only screen and (max-width: 470) {
-  .Lugar {
-    display: none;
+  .table-responsive {
+    overflow-x: auto;
   }
 }
 
