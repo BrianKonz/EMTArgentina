@@ -48,7 +48,7 @@ body {
 }
 
 .ConteinerCards {
-  background-image: url(/Galeria/FondoCards.jpg);
+  background-image: url(Galeria/FondoCards.jpg);
   background-size: 200%;
   background-position: center;
   background-size: cover;
