@@ -282,6 +282,50 @@ body .modal p {
   cursor: pointer;
 }
 
+.contenedorPost {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../Galeria/fondoRedes.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4rem;
+}
+
+.contenedorPost .lastPost {
+  margin: 4rem 4rem;
+  padding: 1rem;
+  border: 1px solid #0d6efd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contenedorPost .lastPost:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+  border: 1px solid #BF1363;
+}
+
+.tituloPost {
+  font-size: 2rem;
+  text-align: start;
+  font-weight: bold;
+  color: #BF1363;
+  margin: 4rem;
+}
+
 .navbar {
   margin-top: 2rem;
 }

@@ -222,3 +222,36 @@ body {
             cursor: pointer;
         }    
 }
+
+
+.contenedorPost {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../Galeria/fondoRedes.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: $Margin;
+        .lastPost {
+            margin: $Margin $Margin;
+            padding: 1rem;
+            border: 1px solid $colorTexto;
+            transition: 1s;
+                &:hover {
+                    transform:scale(0.99);
+                    border: 1px solid $colorTitulo;
+                }
+        }
+}
+
+.tituloPost {
+    font-size: $Letra/2;
+    text-align: start;
+    font-weight: bold;
+    color: $colorTitulo;
+    margin: $Margin;
+}
