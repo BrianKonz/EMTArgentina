@@ -1,5 +1,14 @@
 /**footer**/
 
-#footer {
-    margin-top: 1rem;
+footer {
+    margin-top: $Margin*2;
+}
+
+footer {
+    svg {
+        transition: all .2s ease;
+            &:hover{
+                stroke: $colorTitulo;
+            }
+    }
 }
