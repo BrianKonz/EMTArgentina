@@ -26,6 +26,108 @@
     margin-block-end: $Margin/2;
 }
 
+
+.contenedorNoticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px 10px;
+    grid-auto-flow: column;
+    justify-items: stretch;
+    grid-template-areas:
+      "Nota-1 Nota-1 Nota-2"
+      "Nota-3 Nota-3 Nota-2"
+      "Nota-4 Nota-4 Nota-4";
+    width: auto;
+    height: 110vh;
+    margin: $Margin;
+        a {
+            font-size: 1.5rem;
+        }
+  }
+  
+  .Nota-1 { grid-area: Nota-1;
+            display: flex;
+            flex-direction: row;
+            padding: 2rem;
+            border: .1px solid $colorTitulo;
+                .nota-1Text {
+                    margin-top: ($Margin*2)-1;
+                    margin-left: $Margin;
+                        p {
+                            font-size: 1.5rem;
+                            color: $colorTitulo;
+                        }
+                }
+}
+
+.Nota-1 {
+    h2{
+        color: $colorTexto;
+    }
+}
+  
+  .Nota-2 { grid-area: Nota-2; 
+            padding: 2rem;
+            border: .1px solid $colorTitulo;
+                .nota-2Text{
+                    margin-top: $Margin;
+                        p {
+                            font-size: 1.5rem;
+                            color: $colorTitulo; 
+                        }
+                }
+}
+
+.Nota-2 {
+    h2 {
+        color: $colorTexto;
+    }
+}
+  
+  .Nota-3 { grid-area: Nota-3; 
+            padding: 2rem;
+            border: .1px solid $colorTitulo;
+                .Sub__Nota-3 {
+                    display: flex;
+                    flex-direction: row;
+                        h2 {
+                            margin-left: $Margin;
+                            margin-bottom: $Margin;
+                            color: $colorTexto;
+                        }
+                }
+}
+
+.Sub__Nota-3 {
+    a {
+        margin-left: $Margin;
+    }
+}
+
+
+  .Nota-4 { grid-area: Nota-4; 
+            padding: 2rem;
+            border: .1px solid $colorTitulo;
+            display: flex;
+            flex-direction: row;
+             h2 {
+                 color: $colorTexto;
+             }
+  }
+  
+  .Nota-4 {
+      p {
+        font-size: 1.5rem;
+        color: $colorTitulo; 
+      }
+  }
+
+
+
+
+
+
 .ConteinerCards {
     background-image: url(../Galeria/FondoCards.jpg);
     background-size: 200%;

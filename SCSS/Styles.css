@@ -47,6 +47,132 @@ body {
           margin-block-end: 2rem;
 }
 
+.contenedorNoticias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 7px 10px;
+  grid-auto-flow: column;
+  justify-items: stretch;
+      grid-template-areas: "Nota-1 Nota-1 Nota-2" "Nota-3 Nota-3 Nota-2" "Nota-4 Nota-4 Nota-4";
+  width: auto;
+  height: 110vh;
+  margin: 4rem;
+}
+
+.contenedorNoticias a {
+  font-size: 1.5rem;
+}
+
+.Nota-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Nota-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  border: 0.1px solid #BF1363;
+}
+
+.Nota-1 .nota-1Text {
+  margin-top: 7rem;
+  margin-left: 4rem;
+}
+
+.Nota-1 .nota-1Text p {
+  font-size: 1.5rem;
+  color: #BF1363;
+}
+
+.Nota-1 h2 {
+  color: #0d6efd;
+}
+
+.Nota-2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: Nota-2;
+  padding: 2rem;
+  border: 0.1px solid #BF1363;
+}
+
+.Nota-2 .nota-2Text {
+  margin-top: 4rem;
+}
+
+.Nota-2 .nota-2Text p {
+  font-size: 1.5rem;
+  color: #BF1363;
+}
+
+.Nota-2 h2 {
+  color: #0d6efd;
+}
+
+.Nota-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Nota-3;
+  padding: 2rem;
+  border: 0.1px solid #BF1363;
+}
+
+.Nota-3 .Sub__Nota-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Nota-3 .Sub__Nota-3 h2 {
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  color: #0d6efd;
+}
+
+.Sub__Nota-3 a {
+  margin-left: 4rem;
+}
+
+.Nota-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: Nota-4;
+  padding: 2rem;
+  border: 0.1px solid #BF1363;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Nota-4 h2 {
+  color: #0d6efd;
+}
+
+.Nota-4 p {
+  font-size: 1.5rem;
+  color: #BF1363;
+}
+
 .ConteinerCards {
   background-image: url(../Galeria/FondoCards.jpg);
   background-size: 200%;
