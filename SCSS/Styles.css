@@ -452,6 +452,12 @@ body .modal p {
   margin: 4rem;
 }
 
+.whatsapp {
+  position: fixed;
+  top: 50rem;
+  left: 120rem;
+}
+
 .navbar {
   margin-top: 2rem;
 }
