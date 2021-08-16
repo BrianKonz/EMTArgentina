@@ -66,6 +66,9 @@
             width: 20%;
             margin: $Margin/4;
             border-radius: 50%;
+                @media only screen and (max-width: 900px) {
+                 width: 15%;   
+            }
 
         }        
 }
@@ -83,8 +86,7 @@
         img {
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
-        }
-    
+        }   
 }
 
 #boxInterior {
@@ -94,71 +96,37 @@
     }
 }
 
-
-
-/*
-.comprarTicket {
-    h1 {
-        margin: ($Margin)-1;
-        text-align: center;
-        font-size: ($Letra/2)+0.8;
-        font-weight: bold;
-        color: $colorTitulo ;  
+.card-body {
+    select {
+        margin-bottom: $Margin/2;
+        color: $colorTexto;
+        border: 1px solid $colorTitulo;
+        font-size: 1.5rem;
+        border-radius: 5%;
+            option {
+                color: $colorTexto;
+                border: 1px solid $colorTitulo;
+                font-size: 1.5rem;
+            }
     }
 }
 
-.comprarTicket {
-    height: ($Ancho/2);
-    margin-top: ($Margin)-1;
-    margin-block-end: $Margin;
-    margin-left: ($Margin*2)+2;
-            @media only screen and (max-width: 1024px) {
-                    display: block;
-                    height: $Ancho;                   
-            }
+.card-body {
+    input {
+        margin-bottom: $Margin/2;
+        color: $colorTexto;
+        font-weight: bold;
+        border: 1px solid $colorTitulo;
+        font-size: 1.5rem;
+        padding: .5rem;
+        border-radius: 5%;
+    }
 }
 
-.comprarTiket__sub {
-    margin: $Margin+1 $Margin+3;
-    display: inline-block;
-            h3 {
-                margin: $Margin/2 $Margin/$Margin; 
-                font-size: ($Letra/2); 
-                font-weight: bold; 
-                color: $colorTitulo;  
-            }
-    
-}
 
-.comprarTiket__sub {
-            a {
-                font-size: ($Letra/2)-0.5;
-                font-weight: bold;
-                padding: .5rem 5rem;
-                border-radius: .5rem;  
-            }   
+#card-group {
+        @media only screen and (max-width: 900px){
+            display: flex;
+            flex-direction: column;
+        }
 }
-
-.comprarTiket__sub {
-            select {
-                padding: .5rem 7rem;
-                border-radius: .5rem;
-                font-size: ($Letra/2)-0.5;  
-            }
-}
-
-.comprarTiket__sub {
-            option {
-                font-size: ($Letra/2)-0.5;
-            }
-}
-
-.comprarTiket__sub {
-            input {
-                padding: .5rem 7rem;
-                border-radius: .5rem;
-                font-size: ($Letra/2)-0.5;
-            }
-}
-
-*/

@@ -531,12 +531,6 @@ body .modal p {
   margin: 4rem;
 }
 
-.whatsapp {
-  position: fixed;
-  top: 50rem;
-  left: 120rem;
-}
-
 .navbar {
   margin-top: 2rem;
 }
@@ -714,6 +708,12 @@ body .modal p {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 900px) {
+  #imagenArtista img {
+    width: 15%;
+  }
+}
+
 #imagenArtista p {
   height: 4.16667rem;
   margin-top: 1rem;
@@ -730,72 +730,42 @@ body .modal p {
   font-size: 1.5rem;
 }
 
-/*
-.comprarTicket {
-    h1 {
-        margin: ($Margin)-1;
-        text-align: center;
-        font-size: ($Letra/2)+0.8;
-        font-weight: bold;
-        color: $colorTitulo ;  
-    }
+.card-body select {
+  margin-bottom: 2rem;
+  color: #0d6efd;
+  border: 1px solid #BF1363;
+  font-size: 1.5rem;
+  border-radius: 5%;
 }
 
-.comprarTicket {
-    height: ($Ancho/2);
-    margin-top: ($Margin)-1;
-    margin-block-end: $Margin;
-    margin-left: ($Margin*2)+2;
-            @media only screen and (max-width: 1024px) {
-                    display: block;
-                    height: $Ancho;                   
-            }
+.card-body select option {
+  color: #0d6efd;
+  border: 1px solid #BF1363;
+  font-size: 1.5rem;
 }
 
-.comprarTiket__sub {
-    margin: $Margin+1 $Margin+3;
-    display: inline-block;
-            h3 {
-                margin: $Margin/2 $Margin/$Margin; 
-                font-size: ($Letra/2); 
-                font-weight: bold; 
-                color: $colorTitulo;  
-            }
-    
+.card-body input {
+  margin-bottom: 2rem;
+  color: #0d6efd;
+  font-weight: bold;
+  border: 1px solid #BF1363;
+  font-size: 1.5rem;
+  padding: .5rem;
+  border-radius: 5%;
 }
 
-.comprarTiket__sub {
-            a {
-                font-size: ($Letra/2)-0.5;
-                font-weight: bold;
-                padding: .5rem 5rem;
-                border-radius: .5rem;  
-            }   
+@media only screen and (max-width: 900px) {
+  #card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.comprarTiket__sub {
-            select {
-                padding: .5rem 7rem;
-                border-radius: .5rem;
-                font-size: ($Letra/2)-0.5;  
-            }
-}
-
-.comprarTiket__sub {
-            option {
-                font-size: ($Letra/2)-0.5;
-            }
-}
-
-.comprarTiket__sub {
-            input {
-                padding: .5rem 7rem;
-                border-radius: .5rem;
-                font-size: ($Letra/2)-0.5;
-            }
-}
-
-*/
 /*Form Contacto*/
 main .contacto {
   padding: 50px 0;
@@ -929,5 +899,10 @@ footer svg {
 
 footer svg:hover {
   stroke: #BF1363;
+}
+
+#Copyright {
+  color: white;
+  background-color: #0051ff;
 }
 /*# sourceMappingURL=Styles.css.map */
