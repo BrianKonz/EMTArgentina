@@ -67,6 +67,33 @@ body {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 1240px) {
+  .contenedorNoticias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .contenedorNoticias div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorNoticias div img {
+    width: auto;
+    height: auto;
+  }
+}
+
 .Nota-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -93,6 +120,13 @@ body {
   color: #BF1363;
 }
 
+@media only screen and (max-width: 1240px) {
+  .contenedorNoticias .nota-1Text {
+    margin-left: 0.25rem;
+    margin-top: 1rem;
+  }
+}
+
 .Nota-1 h2 {
   color: #0d6efd;
 }
@@ -115,6 +149,13 @@ body {
   color: #BF1363;
 }
 
+@media only screen and (max-width: 1240px) {
+  .contenedorNoticias .nota-2Text {
+    margin-left: 0.25rem;
+    margin-top: 1rem;
+  }
+}
+
 .Nota-2 h2 {
   color: #0d6efd;
 }
@@ -126,9 +167,6 @@ body {
   grid-area: Nota-3;
   padding: 2rem;
   border: 0.1px solid #BF1363;
-}
-
-.Nota-3 .Sub__Nota-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,10 +176,39 @@ body {
           flex-direction: row;
 }
 
-.Nota-3 .Sub__Nota-3 h2 {
+.Nota-3 .Sub__Nota-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 4rem;
+}
+
+.Nota-3 .Sub__Nota-3 h2 {
   margin-bottom: 4rem;
   color: #0d6efd;
+}
+
+@media only screen and (max-width: 1240px) {
+  .contenedorNoticias .Nota-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorNoticias .Nota-3 .Sub__Nota-3 {
+    margin-left: 0.25rem;
+    margin-top: 1rem;
+  }
+  .contenedorNoticias .Nota-3 .Sub__Nota-3 a {
+    margin-left: 0.25rem;
+  }
 }
 
 .Sub__Nota-3 a {
@@ -171,6 +238,18 @@ body {
 .Nota-4 p {
   font-size: 1.5rem;
   color: #BF1363;
+}
+
+.nota-4 iframe {
+  width: 600px;
+  height: 120px;
+}
+
+@media only screen and (max-width: 1240px) {
+  .Nota-4 div iframe {
+    width: auto;
+    height: auto;
+  }
 }
 
 .ConteinerCards {
