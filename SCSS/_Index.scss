@@ -42,7 +42,7 @@
     height: 110vh;
     margin: $Margin;
         a {
-            font-size: 1.5rem;
+            font-size: ($Letra/2)-.5rem;
         }
   }
 
@@ -71,7 +71,7 @@
                     margin-top: ($Margin*2)-1;
                     margin-left: $Margin;
                         p {
-                            font-size: 1.5rem;
+                            font-size: ($letra/2)-.5rem;
                             color: $colorTitulo;
                         }
                 }
@@ -98,7 +98,7 @@
                 .nota-2Text{
                     margin-top: $Margin;
                         p {
-                            font-size: 1.5rem;
+                            font-size: ($letra/2)-.5rem;
                             color: $colorTitulo; 
                         }
                 }
@@ -167,7 +167,7 @@
             padding: 2rem;
             border: .1px solid $colorTitulo;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
              h2 {
                  color: $colorTexto;
              }
@@ -175,28 +175,11 @@
   
   .Nota-4 {
       p {
-        font-size: 1.5rem;
+        font-size: ($letra/2)-.5rem;
         color: $colorTitulo; 
       }
   }
 
-  .nota-4 {
-      iframe {
-          width: 600px;
-          height: 120px;
-      }
-  }
-
-  @media only screen and (max-width: 1240px) {
-    .Nota-4 {
-        div {
-            iframe {
-                width: auto;
-                height: auto;
-            }
-        }
-    }
-}    
 
 
 .ConteinerCards {
@@ -211,6 +194,7 @@
     justify-content: center;
     height: 100vh;
     align-items: center;
+    margin-top: $Margin*3;
         .Cards {
             border-radius: 1rem;
             box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
@@ -218,8 +202,8 @@
             flex-direction: column;
             margin: 5rem;
             overflow: hidden;
-            width: 40rem;
-            height: 40rem;
+            width: ($Largo)-10rem;
+            height: ($Ancho)-10rem;
             backdrop-filter: blur(1rem);
             background-color: rgba(255, 255, 255, 0.060);
             border: .1rem solid rgba(255,255,255, 0.18);
@@ -232,7 +216,7 @@
 .Cards {
         h2{
                 letter-spacing: .1rem;
-                margin: 2rem 0;
+                margin: $Margin/2 0;
             }
     }
 
@@ -252,7 +236,7 @@
     align-items: flex-start;
     justify-content: space-between;
         p {
-            font-size: 1.5rem;
+            font-size: ($letra/2)-.5rem;
         }
 }
 
@@ -329,7 +313,7 @@ body {
                 color: $colorTexto;
                 text-align: start;
                 margin: $Margin/2;
-                font-size: 1.5rem;
+                font-size: ($letra/2)-.5rem;
             }
     }
 }
@@ -341,15 +325,15 @@ body {
 
 .modal {
     .contenedorModal {
-        width: 40rem;
-        height: 30rem;
+        width: ($Largo)-10rem;
+        height: ($Ancho)-20rem;
         margin: auto;
         border-radius: 1rem;
         background-color: #fff;
         box-shadow: 1px 7px 25px rgba (0,0,0,0.6);
         transition: all 500ms ease;
             header {
-                font-size: 1.5rem;
+                font-size: ($letra/2)-.5rem;
                 font-weight: bold;
                 padding: 10px;
                 background-color: $colorTexto;
@@ -365,7 +349,7 @@ body {
         top: 27.5%;
         right: 36%;
         color: #fff;
-        font-size: 1rem;
+        font-size: ($letra/2)-1rem;
         font-weight: bold;
         cursor: pointer;
         @media only screen and (max-width: 1300px) {

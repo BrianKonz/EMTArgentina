@@ -225,10 +225,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Nota-4 h2 {
@@ -238,18 +238,6 @@ body {
 .Nota-4 p {
   font-size: 1.5rem;
   color: #BF1363;
-}
-
-.nota-4 iframe {
-  width: 600px;
-  height: 120px;
-}
-
-@media only screen and (max-width: 1240px) {
-  .Nota-4 div iframe {
-    width: auto;
-    height: auto;
-  }
 }
 
 .ConteinerCards {
@@ -273,6 +261,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 12rem;
 }
 
 .ConteinerCards .Cards {

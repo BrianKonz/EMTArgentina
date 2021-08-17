@@ -23,7 +23,7 @@
 .tabla_Eventos {
     td {
         color: $colorTitulo;
-        font-size: 1.5rem;
+        font-size: ($letra/2)-.5rem;
         font-weight: bold;
         text-align: center;
     }

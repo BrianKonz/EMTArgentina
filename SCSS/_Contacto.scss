@@ -36,7 +36,7 @@ main {
             outline: none;
             border-bottom: .1rem solid $colorTexto;
             padding: 15px 20px;
-            font-size: 1.5rem;
+            font-size: ($Letra/2)-.5rem;
             color: $colorTitulo;
             width: 46%;
             margin-bottom: 2rem;
@@ -55,7 +55,7 @@ main {
         outline: none;
         border-bottom: .1rem solid $colorTexto;
         padding: 15px 20px;
-        font-size: 1.5rem;
+        font-size: ($Letra/2)-.5rem;
         color: $colorTitulo;
         width: 46%;
         margin-bottom: 2rem;
@@ -74,7 +74,7 @@ main {
         outline: none;
         border-bottom: .1rem solid $colorTexto;
         padding: 15px 20px;
-        font-size: 1.5rem;
+        font-size: ($Letra/2)-.5rem;
         color: $colorTitulo;
         width: 46%;
         margin-bottom: 2rem;
@@ -93,7 +93,7 @@ main {
         outline: none;
         border-bottom: .1rem solid $colorTexto;
         padding: 15px 20px;
-        font-size: 1.5rem;
+        font-size: ($Letra/2)-.5rem;
         color: grey;
         width: 46%;
         margin-bottom: 2rem;
@@ -111,7 +111,7 @@ main {
             outline: none;
             border-bottom: .1rem solid $colorTexto;
             padding: 15px 20px;
-            font-size: 1.5rem;
+            font-size: ($Letra/2)-.5rem;
             color: $colorTitulo;
             width: 96%;
             margin-bottom: 2rem;

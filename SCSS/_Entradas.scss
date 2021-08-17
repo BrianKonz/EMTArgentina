@@ -45,17 +45,6 @@
     }
 }
 
-.card-footer {
-    a {
-        font-size: ($Letra/2)-0.5;
-        font-weight: bold;
-        border-radius: .5rem;
-        transition: all 1s ease;
-            &:hover{
-                transform: scale(0.99);
-        }
-    }
-}
 
 #imagenArtista {
     width: 100%;
@@ -92,7 +81,7 @@
 #boxInterior {
     p {
         color: $colorTitulo;
-        font-size: 1.5rem;
+        font-size: ($Letra/2)-.5rem;
     }
 }
 
@@ -101,12 +90,12 @@
         margin-bottom: $Margin/2;
         color: $colorTexto;
         border: 1px solid $colorTitulo;
-        font-size: 1.5rem;
+        font-size: ($Letra/2)-.5rem;
         border-radius: 5%;
             option {
                 color: $colorTexto;
                 border: 1px solid $colorTitulo;
-                font-size: 1.5rem;
+                font-size: ($Letra/2)-.5rem;
             }
     }
 }
@@ -117,7 +106,7 @@
         color: $colorTexto;
         font-weight: bold;
         border: 1px solid $colorTitulo;
-        font-size: 1.5rem;
+        font-size: ($Letra/2)-.5rem;
         padding: .5rem;
         border-radius: 5%;
     }
