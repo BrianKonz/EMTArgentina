@@ -71,7 +71,7 @@
                     margin-top: ($Margin*2)-1;
                     margin-left: $Margin;
                         p {
-                            font-size: ($letra/2)-.5rem;
+                            font-size: ($Letra/2)-.5rem;
                             color: $colorTitulo;
                         }
                 }
@@ -98,7 +98,7 @@
                 .nota-2Text{
                     margin-top: $Margin;
                         p {
-                            font-size: ($letra/2)-.5rem;
+                            font-size: ($Letra/2)-.5rem;
                             color: $colorTitulo; 
                         }
                 }
@@ -175,7 +175,7 @@
   
   .Nota-4 {
       p {
-        font-size: ($letra/2)-.5rem;
+        font-size: ($Letra/2)-.5rem;
         color: $colorTitulo; 
       }
   }
@@ -236,7 +236,7 @@
     align-items: flex-start;
     justify-content: space-between;
         p {
-            font-size: ($letra/2)-.5rem;
+            font-size: ($Letra/2)-.5rem;
         }
 }
 
@@ -313,7 +313,7 @@ body {
                 color: $colorTexto;
                 text-align: start;
                 margin: $Margin/2;
-                font-size: ($letra/2)-.5rem;
+                font-size: ($Letra/2)-.5rem;
             }
     }
 }
@@ -333,7 +333,7 @@ body {
         box-shadow: 1px 7px 25px rgba (0,0,0,0.6);
         transition: all 500ms ease;
             header {
-                font-size: ($letra/2)-.5rem;
+                font-size: ($Letra/2)-.5rem;
                 font-weight: bold;
                 padding: 10px;
                 background-color: $colorTexto;
@@ -349,7 +349,7 @@ body {
         top: 27.5%;
         right: 36%;
         color: #fff;
-        font-size: ($letra/2)-1rem;
+        font-size: ($Letra/2)-1rem;
         font-weight: bold;
         cursor: pointer;
         @media only screen and (max-width: 1300px) {

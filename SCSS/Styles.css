@@ -666,19 +666,6 @@ body .modal p {
   margin-bottom: 2rem;
 }
 
-.card-footer a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-radius: .5rem;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.card-footer a:hover {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-}
-
 #imagenArtista {
   width: 100%;
   display: -webkit-box;
@@ -893,5 +880,123 @@ footer svg:hover {
 #Copyright {
   color: white;
   background-color: #0051ff;
+}
+
+/*Login*/
+.contenedorIngreso {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  justify-items: stretch;
+      grid-template-areas: "imagen1 Ingreso imagen2";
+  width: 100%;
+  height: 80rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contenedorIngreso {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    justify-items: stretch;
+        grid-template-areas: "Ingreso";
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Ingreso {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Ingreso;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 4rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+.imagen1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagen1;
+  background-image: url(../Galeria/Fondologin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-size: contain;
+}
+
+.imagen2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: imagen2;
+  background-image: url(../Galeria/Fondologin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.emtLogo {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+#comienzaCompra {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.loginPrincipal {
+  width: auto;
+  height: 20rem;
+}
+
+.loginPrincipal div {
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.Login a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .5rem 3rem;
+  border-radius: .5rem;
+}
+
+.Login input {
+  padding: .5rem 7rem;
+  border-radius: .5rem;
+  text-align: center;
 }
 /*# sourceMappingURL=Styles.css.map */
