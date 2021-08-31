@@ -66,7 +66,9 @@
             display: flex;
             flex-direction: row;
             padding: 2rem;
-            border: .1px solid $colorTitulo;
+            box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+            backdrop-filter: blur(1rem);
+            background-color: rgba(255, 255, 255, 0.060);
                 .nota-1Text {
                     margin-top: ($Margin*2)-1;
                     margin-left: $Margin;
@@ -94,7 +96,10 @@
   
   .Nota-2 { grid-area: Nota-2; 
             padding: 2rem;
-            border: .1px solid $colorTitulo;
+            box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+            backdrop-filter: blur(1rem);
+            background-color: rgba(255, 255, 255, 0.060);
+            color: white;
                 .nota-2Text{
                     margin-top: $Margin;
                         p {
@@ -124,9 +129,12 @@
   
   .Nota-3 { grid-area: Nota-3; 
             padding: 2rem;
-            border: .1px solid $colorTitulo;
             display: flex;
             flex-direction: row;
+            box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+            backdrop-filter: blur(1rem);
+            background-color: rgba(255, 255, 255, 0.060);
+            color: white;
                 .Sub__Nota-3 {
                     display: flex;
                     flex-direction: column;
@@ -165,9 +173,12 @@
 
   .Nota-4 { grid-area: Nota-4; 
             padding: 2rem;
-            border: .1px solid $colorTitulo;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+            backdrop-filter: blur(1rem);
+            background-color: rgba(255, 255, 255, 0.060);
+            color: white;
              h2 {
                  color: $colorTexto;
              }

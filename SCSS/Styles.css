@@ -107,7 +107,11 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 2rem;
-  border: 0.1px solid #BF1363;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .Nota-1 .nota-1Text {
@@ -137,7 +141,12 @@ body {
   -ms-grid-column: 3;
   grid-area: Nota-2;
   padding: 2rem;
-  border: 0.1px solid #BF1363;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: white;
 }
 
 .Nota-2 .nota-2Text {
@@ -166,7 +175,6 @@ body {
   -ms-grid-column-span: 2;
   grid-area: Nota-3;
   padding: 2rem;
-  border: 0.1px solid #BF1363;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,6 +182,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: white;
 }
 
 .Nota-3 .Sub__Nota-3 {
@@ -221,7 +235,6 @@ body {
   -ms-grid-column-span: 3;
   grid-area: Nota-4;
   padding: 2rem;
-  border: 0.1px solid #BF1363;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +242,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: white;
 }
 
 .Nota-4 h2 {
@@ -614,7 +633,6 @@ body .modal p {
 }
 
 .frameArt {
-  width: 90%;
   border-radius: 1%;
 }
 
